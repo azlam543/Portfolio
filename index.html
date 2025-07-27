@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c3bad376f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        <nav>
+            <img src="images/logo1.png" alt="Logo" class="logo">
+            <ul class="nav-links" id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+         </div> 
+        <div class="header-text">
+            <p>Integrated MCA Graduate </p>
+            <h1>Hi, I'm <span class="name">Aslam</span> <span class="name">Muhammed</span></h1>
+       </div>
+        </div>
+    </div>
+    <!-- about  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+            <div class="about-col-1">
+                <img src="images/clg.jpeg" alt="College Image">
+            </div>
+            <div class="about-col-2">
+<h1 class="sub-title">About Me</h1>
+                <p><b>Hi! I’m Aslam Muhammed</b> — a tech enthusiast who loves working with Linux, cloud tools, and solving real-world problems through code.
+ I recently completed my Integrated MCA and have hands-on experience with Linux system setup, AWS cloud services, shell scripting, and containerization using Podman. I’m currently preparing for RHCSA and exploring how automation and DevOps tools can make systems smarter and simpler.
+ Whether it’s launching a server, writing a Bash script, or building a data dashboard — I enjoy learning new things and bringing ideas to life. Let’s build something cool together!</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links"onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                
+                    <li><span>Linux System Administration</span><br>Basic experience with Linux setup, services, and permissions.</li>
+                    <li><span>AWS (EC2, S3)</span><br>Can launch servers and manage storage on AWS.</li>
+                    <li><span>Bash Scripting</span><br>Write simple scripts to automate tasks.</li>
+                    <li><span>Power BI</span><br>Create dashboards and clean datasets.</li>
+                    <li><span>Python</span><br>Understand basic scripting and logic.</li>
+                    <li><span>HTML, CSS, SQL</span><br>Build simple web pages and run SQL queries.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                
+                    <li><span>2020-2025</span><br>Integrated MCA @ Saintgits College of Engineering</li>
+                    <li><span>2018-2020</span><br>Higher Secondary @ AM HSS</li>
+                    <li><span>2015</span><br>SSLC @ AKJM HSS</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                
+                    <li><span>L&D Intern</span><br>Nest Digital<br>February 2025-March 2025</li>
+                    <li><span>AWS Intern</span><br>Internship Studio<br>December 2024-March 2025</li>
+                    <li><span>Cyber security Intern</span><br>Cyber cell department<br>July 2023</li>
+                    
+                </ul>
+            </div>
+            </div>
+        </div>
+    <!---------services ----------- -->
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-brands fa-linux"></i>
+                    <h2>Linux System Setup & Support (Beginner Level)</h2>
+                    <p>Assist with installing and configuring Linux systems (CentOS/RHEL), managing users, setting up services, and securing the server using firewalls and permissions.</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-linux"></i>
+                    <h2>LAMP/LEMP Stack Installation</h2>
+                    <p>Installing and configuring Linux + Apache/Nginx + MySQL + PHP for learning or test environments.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Basic EC2 Instance Setup</h2>
+                    <p>Launch and configure virtual servers (EC2 instances) for hosting websites, applications, or test environments. Includes setting up security groups, SSH access, and installing necessary software like Apache or Nginx.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                    <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h2>Data Visualization with Power BI</h2>
+                    <p>Design simple dashboards and visual reports using Power BI. Help in connecting Excel, SQL, or CSV data sources to create meaningful insights for businesses or academic projects.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                  <div>
+                    <i class="fa-solid fa-box-open"></i>
+                    <h2>Containerization with Podman (Basic)</h2>
+                    <p>Create and manage containers using Podman for isolated app environments and testing purposes.
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Basic Programming Help (Python & Java)</h2>
+                    <p>Assist in writing and debugging simple Python or Java programs for students, beginners, or practice projects. Includes help with logic building, syntax correction, and small script or app development.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <!-- ------portfolio----- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/fuel.png">
+                    <div class="layer">
+                        <h3>On-Road Help</h3>
+                        <p>Developed an Android app enabling users to request roadside assistance, including towing, fuel delivery, and
+ mechanical support, using live GPS location.Implemented a location-based matching system that compares user GPS coordinates with stored mechanic
+ addresses in a MySQL database, with a JSP-based server for backend processing.</p>
+                 <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/bus.jpg">
+                    <div class="layer">
+                        <h3>Find My Bus</h3>
+                        <p> Designed and developed an Android-based bus tracking application using Android Studio and Firebase for
+ backend services.Integrated Google Maps API to implement  geolocation, enhancing user experience with precise tracking
+ capabilities</p>
+                       <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    </div>
+                
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+     </div>
+    <!-- --------contact ------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>aslammuhammed9214@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9605200355</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/aslam-muhammed-4b0b1a1b6/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/share/14GWoXLRt1k/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/azlam__mohd?igsh=MXB5cXh0dXEyMG45dQ%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/9605200355/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <a href="images/mycv.pdf" download class="btn btn2">Download Cv</a>
+                    </div>
+                <div class="contact-right">
+                
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Send Message</button>
+                    </form>  
+                    <span id="msg"></span>
+                </div>             
+            </div>
+        </div>
+     </div>
+     <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2025 Aslam Muhammed. All rights reserved.</p>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+         var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link');
+            }
+              for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyw2tHX9iTQx8Nu97sB6vGprola0BFbAT8Ad6N4BUk1E0tNXR2thp7zxi7M3wQQiyNpJw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg");
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!";
+        msg.style.display = "inline";
+        setTimeout(function(){
+            msg.innerHTML = "";
+            msg.style.display = "none";
+            
+        }, 3000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
